@@ -141,21 +141,7 @@ sudo apt update && sudo apt install codium -y
 #codium --install-extension rebornix.ruby --user-data-dir=~/.vscode-oss
 #codium --install-extension zignd.html-css-class-completion --user-data-dir=~/.vscode-oss
 
-#Make Nemo the defualt file manager
-xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
-#Distro-specific stuff
-#DISTRO=$(cat /etc/lsb-release | grep DISTRIB_ID | cut -c 12-30)
-DISTRO=$(lsb_release -is)
-
-case $DISTRO in
-
-#
-#
-#
-#
-#
-#
 if (whiptail --backtitle "Pentest Conversion Script" --title "Complete" --yesno "The script is now complete.  A reboot is recommended.\nWould you like to reboot now?" 10 60)
 then
     whiptail --backtitle "Pentest Conversion Script" --title "Rebooting!" --msgbox "Thank you for using this script.  Enjoy your new Kali!" 8 60
