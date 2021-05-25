@@ -40,40 +40,40 @@ sudo apt upgrade -y
 #****************************************
 #****************************************
 #System utilities
-sudo apt install apt-file cockpit dkms exfat-fuse exfat-utils fuse
-sudo apt install guake htop libpam-google-authenticator ncdu nemo
-sudo apt install powershell pptp-linux xrdp xserver-xorg-input-all xinput
+sudo apt install -y apt-file cockpit dkms exfat-fuse exfat-utils fuse
+sudo apt install -y guake htop libpam-google-authenticator ncdu nemo
+sudo apt install -y powershell pptp-linux xrdp xserver-xorg-input-all xinput
 
 #VM stuff
-sudo apt install open-vm-tools-desktop spice-vdagent xserver-xorg-video-qxl
-sudo apt install xserver-xorg-video-vmware
+sudo apt install -y open-vm-tools-desktop spice-vdagent xserver-xorg-video-qxl
+sudo apt install -y xserver-xorg-video-vmware
 
 #Printing
-sudo apt install cups cups-client foomatic-db
+sudo apt install -y cups cups-client foomatic-db
 
 #Firewalls
-sudo apt install firewalldfirewall-config
+sudo apt install -y firewalldfirewall-config
 
 #Privacy tools
-sudo apt install bleachbit proxychains scrub tor
+sudo apt install -y bleachbit proxychains scrub tor
 
 #Office/productivity tools
-sudo apt install audacity cherrytree gedit gedit-plugins gimp 
-sudo apt install libreoffice screenfetch vlc
+sudo apt install -y audacity cherrytree gedit gedit-plugins gimp 
+sudo apt install -y libreoffice screenfetch vlc
 
 #Software development
-sudo apt install build-essential cmake git git-lfs linux-headers-amd64
-sudo apt install ninja-build pkg-config
+sudo apt install -y build-essential cmake git git-lfs linux-headers-amd64
+sudo apt install -y ninja-build pkg-config
 
 #Fun stuff
-sudo apt install cmatrix gnome-chess lolcat
+sudo apt install -y cmatrix gnome-chess lolcat
 
 #Themes
-sudo apt install arc-theme gnome-icon-theme
+sudo apt install -y arc-theme gnome-icon-theme
 
 #Archive utilities
-sudo apt install file-roller lzip lzop rpm2cpio rzip sharutils
-sudo apt install unace unalz unar
+sudo apt install -y file-roller lzip lzop rpm2cpio rzip sharutils
+sudo apt install -y unace unalz unar
 
 wget -O ../build/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 wget -O ../build/slack.deb "https://downloads.slack-edge.com/linux_releases/slack-desktop-4.11.1-amd64.deb"
