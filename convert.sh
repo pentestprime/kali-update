@@ -99,9 +99,9 @@ cp -rv /etc/skel/. /root/
 
 #Time to git stuff...
 cd /root/
-git clone https://github.com/Veil-Framework/Veil.git /opt/Veil
-git clone https://github.com/leebaird/discover.git /opt/discover
-git clone https://github.com/trustedsec/ptf /opt/ptf
+git clone https://github.com/Veil-Framework/Veil.git /etc//opt/Veil
+git clone https://github.com/leebaird/discover.git /etc/opt/discover
+git clone https://github.com/trustedsec/ptf /etc/opt/ptf
 
 #Enable/disable our desired services
 systemctl enable ssh
@@ -116,12 +116,6 @@ systemctl disable firewalld
 
 #Allow VLC to run as root
 sed -i 's/geteuid/getppid/' /usr/bin/vlc
-
-#Get FTK Imager CLI
-wget https://ad-zip.s3.amazonaws.com/ftkimager.3.1.1_ubuntu64.tar.gz
-tar xvf ftkimager.3.1.1_ubuntu64.tar.gz
-mv ftkimager /usr/bin/
-rm ftkimager.3.1.1_ubuntu64.tar.gz
 
 #Install VS Code
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/vscodium-archive-keyring.gpg] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main' | sudo tee --append /etc/apt/sources.list.d/vscodium.list
